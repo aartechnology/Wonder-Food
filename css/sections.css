@@ -1,0 +1,402 @@
+@import url('theme-setting.css');
+/*/* Design for Section no 2 */
+section.s2{
+	padding-top: 60px;
+	display: block;
+	margin: 20px 0px;
+	height: auto;
+}
+section.s2 div.searchBox{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+section.s2 div.searchBox input#searchBar{
+	margin-top:5px;
+	padding: 10px;	border: none;
+	outline: none;
+	width: 300px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.7);
+	border-radius: 25px;
+	font-size: 17px;
+	font-family: 'ThemeFont';
+}
+
+section.s2 div.searchBox button{
+	margin-top: 5px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.7);
+	color: yellow;
+	background:rgba(200,90,90,0.8); 
+	text-decoration: none;
+	font-family:'ThemeFont';
+	padding: 8px 13px;
+	border: 1px solid yellow;
+	margin-left: 2px;
+	font-weight: 500;
+	font-size: 20px;
+	border-radius: 25px;
+	outline: none;
+}
+section.s2 div.searchBox button:hover{
+	background-color: yellow;
+	color: var(--theme-color);
+	border-color: var(--theme-color);
+}	
+section.s2 div.mcon1{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+section.s2 div.mcon2{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+section.s2 div.container{
+	display: block;
+	width:600px;
+	height: auto;
+	font-family: 'ThemeFont';
+	color:black;
+	background: white;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 40px;
+}
+@media screen and (max-width: 600px){
+	section.s2 div.mcon div.container{
+		width: 98%;
+	}
+}
+section.s2 h1{
+	font-size: 24px;
+}
+section.s2 p{
+	font-size: 19px;
+}
+section.s2 div.icon-lay{
+	display: flex;
+	width:100%;
+	height: auto;
+	justify-content:center; 
+	transition: 0.6s;
+}
+.show{
+	opacity: 1;
+}
+.hide{
+	opacity: 0;
+}
+section.s2 div.icon-lay div{
+	width: 200px;
+	height: 200px;
+	text-align: center;
+}
+section.s2 div.icon-lay div div.icon{
+}
+section.s2 div.icon-lay div i{
+	font-size: 60px;
+	color: var(--theme-color);
+	overflow: hidden;
+}
+section.s2 div.icon-lay div p{
+	font-family: 'ThemeFont';
+	color: var(--theme-color);
+	margin-top: 20px;
+	font-weight: 400;
+}
+@media screen and (max-width: 600px){
+	section.s2 div.icon-lay div p{
+		font-size: 14px;
+	}
+	section.s2 div.icon-lay div i{
+		font-size: 50px;
+	}
+	section.s2 p{
+		font-size: 16px;
+	}
+}
+/* End  */
+/* Dsign for Section no 3 */
+section.s3{
+	display: block;
+	margin-top: 50px;
+	
+	width: 100%;
+}
+
+section.s3 div.bar1 {
+	display: flex;
+	width: 100%;
+	height: 280px;
+	margin:30px 0;
+}
+section.s3 div.bar1 div.image-left{
+	min-width: 45%;
+	height: 100%;
+	margin: 0 0;
+}
+section.s3 div.bar1 div.image-left img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+section.s3 div.bar1 div.text-right{
+	min-width: 45%;
+	height: auto;
+	font-family: 'ThemeFont';
+	font-weight: 300;
+	margin: 0 1%;
+}
+section.s3 div.bar1 div.text-right p,div.text-right h3{
+	
+	margin: 0 10px;
+	margin-top: 20px;
+}
+section.s3 div.bar1 div.text-right p{
+	
+}
+@media screen and (min-width:600px){
+	section.s3 div.bar1 div.image-left{
+		box-shadow: 0 0px 5px rgba(0, 0, 0, 0.6);
+		margin: 0 1%;
+	}
+	section.s3 div.bar1 div.text-right{
+		box-shadow: 0 0px 5px rgba(0, 0, 0, 0.6);
+	}
+}
+
+@media screen and (max-width: 599px){
+	section.s3 div.bar1{display: block;width:98%;height: auto;padding-bottom: 30px;margin:10px 1%;box-shadow: 0 0px 5px rgba(0, 0, 0, 0.6);}
+	section.s3 div.bar1 div.image-left{width: 100%;height:280px}
+	section.s3 div.bar1 div.text-right{display: block;}
+}
+section.s3 div.bar2 {
+	display: flex;
+	width: 100%;
+	height: 280px;
+	margin:30px 0;
+}
+section.s3 div.bar2 div.image-right{
+	min-width: 45%;
+	height: 100%;
+	margin: 0 0;
+}
+section.s3 div.bar2 div.image-right img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+section.s3 div.bar2 div.text-left{
+	min-width: 45%;
+	height: auto;
+	font-family: 'ThemeFont';
+	font-weight: 300;
+	margin: 0 1%;
+}
+section.s3 div.bar2 div.text-left p,div.text-left h3{
+	margin: 0 10px;
+	margin-top: 20px;
+}
+section.s3 div.bar1 div.text-left p{
+	
+}
+@media screen and (min-width:600px){
+	section.s3 div.bar2 div.image-right{
+		box-shadow: 0 0px 5px rgba(0, 0, 0, 0.6);
+		margin: 0 1%;
+	}
+	section.s3 div.bar2 div.text-left{
+		box-shadow: 0 0px 5px rgba(0, 0, 0, 0.6);
+	}
+}
+@media screen and (max-width: 599px){
+	section.s3 div.bar2{width:98%;height: auto;flex-wrap: wrap-reverse;padding-bottom: 20px;margin:10px 1%;box-shadow: 0 0px 5px rgba(0, 0, 0, 0.6);}
+	section.s3 div.bar2 div.image-left{width: 100%;height: 280px}
+	section.s3 div.bar2 div.text-right{display: block}
+}
+ div.register-animation{
+	width: 180px;
+	height: auto;
+	text-align: center;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	font-family: 'ThemeFont';
+	background: var(--theme-color);
+	box-shadow: 0 0px 6px rgba(0, 0, 0, 0.6);
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+}
+ div.register-animation h3{
+	
+	font-size: 50px;
+	font-weight: 500;
+	color: var(--text-color);
+
+}
+ div.register-animation p{
+	font-weight: 500;
+	font-size: 20px;
+	color: var(--text-color);
+}
+
+/* End */
+/* Dsign for Section no 4 */
+/* End */
+footer{
+	background-image: url('../images/2.jpg');
+	background-size: cover;
+	background-position: top;
+	background-attachment: fixed;
+}
+footer div.contact{
+	width: 100%;
+	height: auto;
+	padding-bottom: 20px;
+	justify-content: center;
+	background: var(--overlay-color);
+	text-align: center;
+}
+footer div.contact i{
+	font-size: 50px;
+	color: white;
+	margin: 20px 8px;
+	text-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+}
+footer div.contact i:hover{
+	color: yellow;
+}
+footer div.contact h3{
+	display: block;
+	font-family: 'ThemeFont';
+	font-size: 19px;
+	padding-top: 10px;
+	color: yellow;
+}
+footer div.about{
+	display:flex;
+	background-color: rgba(0,0,0,0.6);
+	width: 100%;
+	height: 200px;
+	padding-top: 10px;
+}
+
+footer div.about div.leftside{
+	min-width: 40%;
+	text-decoration: none;
+	font-family: 'ThemeFont';
+	color: white;
+
+}
+footer div.about div.leftside h3{
+	margin-top: 20px;
+	display: block;
+	margin-bottom: 10px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	text-shadow: 0 0px 8px rgba(0, 0, 0, 0.8);
+}
+footer div.about div.leftside ul{
+	display: block;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	margin-bottom: 20px;
+}
+footer div.about div.leftside a{
+	display: block;
+	text-decoration: none;
+	font-family: 'ThemeFont';
+	color: white;
+	margin-top: 10px;
+}
+footer div.about div.leftside a:hover{
+	border-bottom: 2px solid var(--border-color);
+}
+/*  Right Side  */
+footer div.about div.rightside{
+	min-width:60%;
+}
+footer div.about div.rightside h3{
+	color: white;
+	font-family: 'ThemeFont';
+	font-weight: 400;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+footer div.about div.rightside div.email{
+	display: flex;
+	width: auto;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 0px;
+}
+footer div.about div.rightside div.email input{
+	display: block;
+	padding: 10px;
+	border-radius: 25px;
+	border: none;
+	font-family: 'ThemeFont';
+	outline: none;
+	width: 50%;
+}
+footer div.about div.rightside div.email button{
+	box-shadow: 0 0 5px rgba(0,0,0,0.7);
+	color: var(--hover-color);
+	background:rgba(200,90,90,0.8); 
+	text-decoration: none;
+	font-family: 'ThemeFont';
+	padding: 8px 13px;
+	border: 1px solid var(--border-color);
+	margin-left: 2px;
+	font-weight: 500;
+	font-size: 20px;
+	border-radius: 25px;
+	outline: none;
+}
+footer div.about div.rightside div.email button:hover{
+	background-color: yellow;
+	color: var(--theme-color);
+	border-color: var(--theme-color);
+	border-width: 2px;
+}
+@media screen and (max-width: 600px){
+	footer div.about{
+		display: block;
+		width: 100%;
+		height: auto;
+		padding-bottom: 20px; 
+	}
+	footer div.about div.rightside{
+		width: 99%;
+		border-left: none;
+		border-top: 2px solid var(--border-color);
+		margin-left: 0;
+	}
+	footer div.about div.rightside h3{
+		margin-left: 15%;
+	}
+	footer div.about div.rightside div.email{
+		margin-left: 0;
+		justify-content: center;
+	}
+	footer div.about div.leftside{
+		
+		width: 100%;
+	}
+}
+footer div.enddiv{
+	padding-top: 20px;
+	display: block;
+	min-width: 100%;
+	background: rgba(0,0,0,0.6);
+	text-align: center;
+}
+footer div.enddiv h4{
+	font-family: 'ThemeFont';
+	color: white;
+	font-weight: 300;
+	padding-bottom: 20px;
+}

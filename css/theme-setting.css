@@ -1,0 +1,15 @@
+:root{
+	--theme-color: #e76f51;
+	--text-color: white;
+	--text-color2: white;
+	--border-color: yellow;
+	--overlay-color: rgba(200,90,90,0.6);
+	--hover-color:yellow;
+	--hover-text-color: #e76f51;
+}
+@font-face {
+    font-family: "ThemeFont";
+    src: url('../fonts/JosefinSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal; 
+}

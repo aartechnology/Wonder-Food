@@ -1,0 +1,124 @@
+@import url('theme-setting.css');
+/* The Fixed Navigation Bar */
+nav.nav{
+	position: fixed;
+	display: flex;
+	width: 100%;
+	height: 50px;
+	background-color: var(--theme-color);
+	border-bottom: 3px solid var(--border-color);
+	z-index: 9999;
+}
+/* Left Side in Navigation Bar */
+nav.nav div.leftside{
+	width:40%;
+}
+/* Setup for Title in Navigation bar */
+nav.nav div.leftside label.title{
+	color:white;
+	line-height: 53px;
+	font-weight: 400;
+	font-family: 'ThemeFont';
+	font-size: 30px;
+	margin-left: 8%;
+}
+/* Right Side in Navigation Bar */
+nav.nav div.rightside{
+	width: 60%;
+	height: 100%;
+}
+/* Navigation UL of Navigation Bar */
+nav.nav div.rightside ul{
+	display: inline-block;
+	line-height: 49px;
+	float: right;
+}
+/* Navigation Link of Navigation Bar */
+nav.nav div.rightside ul a{
+	font-size: 18px;
+	font-family: 'ThemeFont';
+	color: white;
+	text-decoration: none;
+	margin: 0 7px;
+}
+/* Link hover */
+nav.nav div.rightside ul a:hover{
+	color: yellow;
+	border-bottom: 2px solid yellow;
+}
+nav.nav div.rightside ul a#log{
+	font-size: 18px;
+	font-family: 'ThemeFont';
+	color: white;
+	text-decoration: none;
+	margin: 0 7px;
+	padding: 4px 12px;
+	border: 1px solid yellow;
+	border-radius: 25px;
+}
+nav.nav div.rightside .cbtn i{
+	display: none;
+	line-height: 50px;
+	font-size: 25px;
+	color: white;
+	
+	float: right;
+	margin-right: 10px;
+}
+nav.nav div.rightside #check{
+	display: none;
+}
+nav.nav div.rightside ul i:hover{
+	color: yellow;
+}
+/* Login link Hover */
+nav.nav div.rightside ul a#log:hover{
+	color: var(--hover-text-color);
+	background-color: var(--hover-color);
+	font-weight: 500;
+	transition: 0.4s;
+}
+
+@media screen and (max-width:734px){
+	nav.nav div.rightside ul{
+		position: fixed;
+		height: auto;
+		background: var(--theme-color);
+		width: auto;
+		float: right;
+		padding-bottom: 10px;
+		border-bottom: 3px solid var(--border-color);
+		top: -320px;
+		transition: 0.6s;
+		float: left;
+	}
+	nav.nav div.rightside ul a{
+		display: block;
+	}
+	nav.nav div.rightside ul a#log{
+		display: initial;
+	}
+	nav.nav div.rightside .cbtn i{
+		display: block;
+		cursor: pointer;
+	}
+	nav.nav div.leftside{
+		width: 70%;
+	}
+		nav.nav div.leftside label.title{
+		font-size: 24px;
+	}
+	nav.nav div.rightside{
+		width: 30%;
+	}
+	#check:checked ~ ul{
+		top: 50px;
+	}
+	#check:checked .cbtn{
+		color: var(--hover-color);
+	}
+
+}
+
+
+

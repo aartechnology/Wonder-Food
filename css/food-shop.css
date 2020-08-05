@@ -1,0 +1,287 @@
+@import url('theme-setting.css');
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(var(--overlay-color),var(--overlay-color)),url('../images/1.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+section.section1{
+	padding-top: 56px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+@media screen and (max-width: 1040px){
+	section.section1{
+		display: block;
+	}
+}
+section.section1 div.menu{
+	width: 720px;
+	background: var(--overlay-color);
+	padding-bottom: 10px;
+	margin-left: 10px;
+	box-shadow: 0 0px 5px rgba(0, 0, 0, 0.6);
+}
+
+section.section1 div.menu h4{
+	font-family: "Themefont";
+	font-size: 25px;
+	width: 100%;
+	text-align: center;
+	color: var(--text-color);
+	background: var(--theme-color);
+	padding: 10px 0;
+}
+
+div.wraper{
+	margin-top: 10px;
+	width: 98%;
+	height: 80vh;
+	overflow: hidden;
+	overflow-y: scroll;
+	margin:0 1%;
+}
+::-webkit-scrollbar{
+	border: none;
+
+}
+div.card{
+	background: white;
+	display: flex;
+	width: 100%;
+	height: 100px;
+	margin-top: 10px;
+	box-shadow: 0 0px 5px rgba(0, 0, 0, 0.6);
+}
+div.card div.image{
+	width: 30%;
+	height: auto;
+}
+div.card div.image img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+div.card div.details-container{
+	width: 70%;
+	margin-left: 10px;
+}
+div.card div.details-container h3{
+	font-family: 'ThemeFont';
+	padding-top: 5px;
+	font-size: 20px;
+}
+div.card div.details-container p{
+	font-family: 'ThemeFont';
+	font-size: 17px;
+	 width: 100%;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+}
+div.card div.details-container div.bu{
+	height: auto;
+	width: 100%;
+	background: yellow;
+}
+div.card div.details-container div.bu button.ato-btn{
+	float: right;
+	padding: 6px 8px;
+	margin-right: 10px;
+	color: var(--text-color);
+	border: none;
+	outline: none;
+	background: var(--theme-color);
+	border-radius: 25px;
+	border:1px solid var(--border-color);
+	box-shadow: 0 0px 6px rgba(0, 0, 0, 0.8);
+	font-family: 'ThemeFont';
+	font-size: 19px;
+	outline: none;
+}
+div.card div.details-container div.bu button.ato-btn:hover{
+	background-color: var(--hover-color);
+	color: var(--hover-text-color);
+	border-color:var(--hover-text-color); 
+	outline:none;
+	border-width: 2px;
+}
+
+
+section.section1 div.calculator{
+	background: var(--overlay-color);
+	min-width: 300px;
+	height: auto;
+	box-shadow: 0 0px 5px rgba(0, 0, 0, 0.6);
+	margin-left: 10px;
+}
+section.section1 div.calculator h4{
+	font-family: "Themefont";
+	font-size: 25px;
+	width: 100%;
+	text-align: center;
+	color: var(--text-color);
+	background: var(--theme-color);
+	padding: 10px 0;
+}
+section.section1 div.calculator div.list{
+	margin-top: 10px;
+	width: 98%;
+	height: 60vh;
+	overflow: hidden;
+	overflow-y: scroll;
+	margin:0 1%;
+}
+section.section1 div.calculator div.list p.no{
+	font-family: 'Themefont';
+	font-size: 19px;
+	margin-top: 30%;
+	width: 100%;
+	text-align: center;
+}
+section.section1 div.calculator div.list div.item{
+	background-color: white;
+	width: 100%;
+	margin-top: 10px;
+	padding: 10px 0;
+	box-shadow: 0 0px 7px rgba(0, 0, 0, 0.8);
+}
+section.section1 div.calculator div.list div.item label{
+	font-size: 20px;
+	font-family: 'ThemeFont';
+	text-align: center;
+}
+section.section1 div.calculator div.list div.item p{
+	font-size: 20px;
+	font-family: 'ThemeFont';
+	text-align: center;
+	float: right;
+}
+section.section1 div.calculator button.checkout-btn{
+	font-size: 19px;
+	font-family: 'ThemeFont';
+	font-weight: 400;
+	padding: 5px 20px;
+	border: none;
+	border: 1px solid var(--border-color);
+	color: var(--text-color);
+	background: var(--theme-color);
+	border-radius: 25px;
+	margin: 10px 0;
+	margin-left: 50%;
+
+	box-shadow: 0 0px 7px rgba(0, 0, 0, 0.8);
+	transform: translateX(-50%);
+	outline: none;
+}
+section.section1 div.calculator button.checkout-btn:hover{
+	background-color: var(--hover-color);
+	color: var(--hover-text-color);
+	border-color:var(--hover-text-color); 
+	outline:none;
+	border-width: 2px;
+}
+@media screen and (max-width: 1040px){
+	section.section1 div.menu{
+		width: 90%;
+		margin-bottom: 10px;
+		margin-left:50%;
+		transform: translateX(-50%);
+	}
+	section.section1 div.calculator{
+		width: 90%;
+		margin-bottom: 10px;
+		margin-left:50%;
+		transform: translateX(-50%);
+	}
+}
+/*  this is What for product selection for quantity */
+div.selector{
+	display: none;
+	position: absolute;
+	width: 400px;
+	height: 300px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background: white;
+	box-shadow: 0 0px 8px rgba(0, 0, 0, 0.8);
+}
+@media screen and (max-width: 400px) {
+	div.selector{
+		width: 97%;
+	}
+}
+div.selector h3{
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+	background: var(--theme-color);
+	color: white;
+	font-family: 'ThemeFont';
+	font-weight: 400;
+}
+div.selector div.qdiv{
+	padding-top: 50px;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	font-family: 'ThemeFont';
+	font-size: 19px;
+
+}
+div.selector p{
+	padding-top: 30px;
+	font-size: 19px;
+	font-family: 'ThemeFont';
+	margin-left: 10px;
+}
+div.selector div.qdiv input.quantity{
+	padding: 5px 10px;
+	border: none;
+	width: 50%;
+	box-shadow: 0 0px 8px rgba(0, 0, 0, 0.8);
+	margin-left: 10px;
+	font-size: 19px;
+	font-family: 'ThemeFont';
+}
+div.selector div.at{
+	margin-top: 40px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+div.selector div.at button.add-to-order{
+	padding: 5px 20px;
+	border: none;
+	border: 1px solid var(--border-color);
+	border-radius: 25px;
+	outline: none;
+	color: var(--text-color);
+	background: var(--theme-color);
+	box-shadow: 0 0px 6px rgba(0, 0, 0, 0.8);
+	font-family: 'ThemeFont';
+	font-size: 19px;
+	outline: none;
+}
+div.selector div.at button.add-to-order:hover{
+	background-color: var(--hover-color);
+	color: var(--hover-text-color);
+	border-color:var(--hover-text-color); 
+	outline:none;
+	border-width: 2px;
+	outline: none;
+}
+
+
