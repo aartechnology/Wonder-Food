@@ -1,10 +1,4 @@
-<?php
-	$email = '';
-	if (isset($_GET['email'])){
-		$email = $_GET['email'];
-	}
 
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +15,7 @@
 		<h3>Rgister in Wonder Food</h3>
 		<div class="field-box">
 			<input type="text" name="name" placeholder="Full Name...">
-			<input type="email" name="email" placeholder="Email..." value="<?php echo $email ?>">
+			<input type="email" name="email" placeholder="Email..." >
 			<input type="username" name="username" placeholder="Username...">
 			<input type="password" name="cpass" placeholder="Create Password...">
 			<input type="password" name="ccpass" placeholder="Confirm Password...">
