@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Food Shop | Wonder Food</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta charset="utf-8">
+
+	<!-- JavaScript Include -->
+	<script
+  	src="https://code.jquery.com/jquery-3.5.1.js"
+  	integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  	crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<!-- CSS Include -->
+	<link rel="stylesheet" type="text/css" href="css/food-shop.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+</head>
+<body>
+
+	<nav class="nav">
+		<div class="leftside">
+			<label class="title" onclick="logoClick()">Wonder Food</label>
+		</div>
+		<div class="rightside">
+			<input type="checkbox" name="" id="check">
+			<label for="check" class="cbtn"><i class="fas fa-bars"></i></label>
+			<ul>
+				<a href="food-shop.html" onclick="uncheck()">Order Online</a>
+				<a href="#" onclick="uncheck()">Blog</a>
+				<a href="#" onclick="uncheck()">About</a>
+				<a href="#" onclick="uncheck()">Contact</a>
+				<a href="login.html" id="log" onclick="uncheck()">Login</a>
+				<script type="text/javascript">
+					function uncheck(){
+						$("#check").prop("checked", false);
+					}
+				</script>
+			</ul>
+		</div>
+	</nav>
+
+
+	<section class="section1">
+		
+
+		<div class="menu">
+		<h4>Menu</h4>
+		<!-- Card For Food -->
+		<div class="wraper">
+			<div class="card">
+				<div class="image">
+					<img src="images/2.jpg">
+				</div>				
+				<div class="details-container">
+					<h3>Burger</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+					<p style="color: green;font-weight: bold;">5$</p>
+					<div class="bu"><button class="ato-btn"
+						type="button" onclick="openQuantity(5,'Burger',1)" id="addStat_1">Add to Order</button></div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="image">
+					<img src="images/2.jpg">
+				</div>				
+				<div class="details-container">
+					<h3>Pizza</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+					<p style="color: green;font-weight: bold;">9$</p>
+					<div class="bu"><button class="ato-btn"
+						type="button" onclick="openQuantity(9,'Pizza',2)" id="addStat_2">Add to Order</button></div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="image">
+					<img src="images/2.jpg">
+				</div>				
+				<div class="details-container">
+					<h3>Chicken Roles </h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+					<p style="color: green;font-weight: bold;">8$</p>
+					<div class="bu"><button class="ato-btn"
+						type="button" onclick="openQuantity(8,'Chicken Roles',3)" id="addStat_3">Add to Order</button></div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="image">
+					<img src="images/2.jpg">
+				</div>				
+				<div class="details-container">
+					<h3>Potato Chips </h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+					<p style="color: green;font-weight: bold;">3$</p>
+					<div class="bu"><button class="ato-btn"
+						type="button" onclick="openQuantity(3,'Potato Chips',4)" id="addStat_4">Add to Order</button></div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="image">
+					<img src="images/2.jpg">
+				</div>				
+				<div class="details-container">
+					<h3>Chicken Sandwicth </h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+					<p style="color: green;font-weight: bold;">4$</p>
+					<div class="bu"><button class="ato-btn"
+						type="button" onclick="openQuantity(4,'Chicken Sandwicth',5)" id="addStat_5">Add to Order</button></div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="image">
+					<img src="images/2.jpg">
+				</div>				
+				<div class="details-container">
+					<h3>Mango Milkshake </h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+					<p style="color: green;font-weight: bold;">3$</p>
+					<div class="bu"><button class="ato-btn"
+						type="button" onclick="openQuantity(3,'Mango Milkshake',6)" id="addStat_6">Add to Order</button></div>
+				</div>
+			</div>							
+		</div>
+
+		</div>
+
+		<div class="calculator">
+			<h4>Checkout List</h4>
+			<div class="list">
+				
+			</div>
+			<h4>Total amount : <span id="total-amount"></span>$</h4>
+			<button type= "button" class="checkout-btn">Order</button>
+		</div>
+
+	</section>
+
+<div class="selector">
+	<h3>Add Quantity</h3>
+	<p>
+		Set quantity of <span id="p-name"></span> to order.
+	</p>
+	<div class="qdiv">
+		<label>Quantity</label><input type="number" name="numberOfFood" value="1" class="quantity" onchange="calculate()">
+	</div>
+	<div class="at">
+		
+		<button type="button" class="add-to-order" onclick="addToOrder()"><span id="total-prize">0</span>$ Add </button>
+	</div>
+</div>
+
+
+
+
+
+</body>
+</html>
+
+<script type="text/javascript">
+	
+	// Here all the arrays which is work as a database. // This is just dummy purpose;
+	var dummyprice = new Array();
+	var dummyname = new Array();
+	var dummyquantity = new Array();
+	var dummyid = new Array();
+	// var number_list = 0;
+
+	function logoClick(){
+		window.location = "index.html";
+	}
+	// Temp vaianles for calculation process 
+	var dprize = 1;
+	var temp_total = 0;
+	var temp_name ='';
+	var temp_quantity = 1;
+	var temp_id = 0;
+	var check = 0;
+
+	function openQuantity(price,name,id){
+		document.querySelector('.selector').style.display = 'block';
+		$('#p-name').html(name);
+		$('#total-prize').html(price);
+		temp_total = price;
+		temp_name = name;
+		temp_id = id;
+		dprize = price;
+	}
+	function calculate(){
+		var quantitys = $('.quantity').val();
+		temp_quantity = quantitys;
+		console.log(quantitys);
+		temp_total = parseInt(quantitys) * dprize;
+		console.log(temp_total);
+		$('#total-prize').html(temp_total);
+	}
+	function addToOrder(){
+		loop();
+		var a = dummyid.indexOf(temp_id);
+		console.log(a);
+		if (a == -1){
+			if (temp_quantity > 0){
+				dummyname.push(temp_name);
+				dummyprice.push(temp_total);
+				dummyquantity.push(temp_quantity);
+				dummyid.push(temp_id);
+
+				$('#addStat_'+temp_id).html('Added to order');
+			}
+		}
+		temp_total=0;
+		temp_name='';		
+		temp_quantity=1;
+		dprize = 0;
+		$('.quantity').val(1);
+		document.querySelector('.selector').style.display = 'none';
+		loop();
+	}
+	function deleteFromList(number){
+		console.log(number);
+		$('#addStat_'+dummyid[number]).html('Add to order');
+		dummyid.splice(number,1);
+		dummyquantity.splice(number,1);
+		dummyname.splice(number,1);
+		dummyprice.splice(number,1);
+		console.log(number+' is removed.');
+		if (dummyid.length < 1){
+			$('#total-amount').html(0);
+		}
+		loop();
+	}
+
+	function loop(){
+			$('.list').html('');
+			var total_amount = 0;
+		for(var i=0;i < dummyname.length;i++){
+			var html = "<div class='item' onclick='deleteFromList("+i+")'><label>"+(i+1)+")"+dummyname[i]+" ~"+dummyquantity[i]+"</label><p>"+dummyprice[i]+"$</p></div>";
+			$('.list').append(html);
+
+			total_amount += parseInt(dummyprice[i]);
+			// console.log(total_amount);
+			$('#total-amount').html(total_amount);
+		}
+		console.log(dummyid);
+
+	}
+
+
+	
+
+</script>
+
+
